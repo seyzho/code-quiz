@@ -9,6 +9,16 @@ const endForm = document.getElementById('end-form')
 var sec
 let shuffledQuestions, currentQuestionIndex
 var score = 0
+var highscore = localStorage.getItem("highscore");
+
+if(highscore !== null){
+    if (score > highscore) {
+        localStorage.setItem("highscore", score);      
+    }
+}
+else{
+    localStorage.setItem("highscore", score);
+};
 
 startButton.addEventListener('click', startQuiz)
 nextButton.addEventListener('click', () => {
@@ -29,7 +39,7 @@ function startQuiz() {
 }
 
 function startTimer() {
-    sec = 180
+    sec = 120
     var timer = setInterval(function() {
         document.getElementById('time').innerHTML=sec;
         sec--;

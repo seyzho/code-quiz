@@ -1,0 +1,11 @@
+.score-table {
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.score-list {
+    list-style: none;
+    padding: 50px;
+}

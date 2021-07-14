@@ -1,0 +1,38 @@
+* {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Hide sections until the click events */
+#questions,
+#final,
+#highscores,
+#correctwrong {
+    display: none;  
+} 
+
+/* Remove bullet points from answers list */
+ul.remove-bullets {
+    list-style-type: none;
+}
+
+/* High Score */
+#view-scores {
+    box-shadow: none;
+    outline: none;
+    background-color: #207406;
+}
+
+/* Buttons */
+#start,
+.answerButton,
+#submit-score,
+#home,
+#clearscores {
+    box-shadow: none;
+    outline: none;
+    background-color: #0de2be;
+}
